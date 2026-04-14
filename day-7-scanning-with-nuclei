@@ -1,0 +1,59 @@
+Perintah Scanning
+
+ 
+
+Perintah Nuclei Scan Dasar
+
+nuclei -u target.com (1 Target)
+
+nuclei -l targets.txt (Semua Target Didalam File)
+
+ 
+
+Perintah Nuclei Berdasarkan Severity
+
+nuclei -l targets.txt -severity high,critical
+
+ 
+
+Perintah Nuclei Berdasarkan Template Folder
+
+ 
+
+Perintah Nuclei Only CVE
+
+nuclei -t nuclei-templates/http/cves/ -u target.com
+
+ 
+
+Perintah Nuclei All Vulnerability HTTP
+
+nuclei -t nuclei-templates/http -u target.com
+
+ 
+
+Perintah Nuclei Misconfiguration
+
+nuclei -t nuclei-templates/http/misconfiguration target.com
+
+ 
+
+Perintah Nuclei Exposure
+
+nuclei -t nuclei-templates/http/exposures target.com
+
+ 
+
+Perintah Nuclei Scan Lebih Cepat (parallel / performance)
+
+nuclei -l targets.txt -rate-limit 500
+
+500 request per second
+
+ 
+
+Perintah 3 Tools
+
+subfinder -d target.com -o subfinder.txt | httpx -l subfinder.txt -o httpx.txt -mc 200 | nuclei -l httpx.txt  -severity low,medium,high,critical -o nuclei.txt -ept ssl
+
+https://github.com/emadshanab/Nuclei-Templates-Collection?tab=readme-ov-file

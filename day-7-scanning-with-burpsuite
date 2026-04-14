@@ -1,0 +1,8 @@
+Setup Burpsuite
+
+ 1. Buka Burpsuite + Firefox
+ 2. Klik foxyproxy -> Options -> Proxies
+ 3. Add proxy hostname = 127.0.0.1 | port = 8080
+ 4. Buka http://burp
+ 5. Download CA Certificate
+ 6. Buka firefox settings -> Certificate -> Import cacert.der -> Centang 2 checkboxes

